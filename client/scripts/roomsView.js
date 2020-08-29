@@ -7,7 +7,12 @@ var RoomsView = {
     console.log('RoomsView Initialized');
   },
 
-  render: function() {
+  render: function(listOfRooms) {
+    for (var i = 0; i < listOfRooms.length; i++) {
+      if (listOfRooms[i]) {
+
+      }
+    }
   }
 
 };

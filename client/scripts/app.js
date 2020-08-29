@@ -26,6 +26,10 @@ var App = {
 
       console.log("data", data);
 
+      Rooms.parse(data);
+      var allMessages = Messages.parse(data);
+      var singleMessage = allMessages[0];
+
       callback();
     });
   },

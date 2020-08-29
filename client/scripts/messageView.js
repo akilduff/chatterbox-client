@@ -13,3 +13,9 @@ var MessageView = {
 
 // MessageView.render currently doesn't have a function call.
 // what if we just put the Username, text, and roomname in there? just hard coded to see what pops out w/r/t the Mel Brooks message?
+
+// compiled: _.template("hello: <%= name %>");
+// compiled({name: 'moe'});
+// => "hello: moe"
+
+// for us, text = chat in the example
