@@ -26,6 +26,7 @@ var Parse = {
   readAll: function(successCB = 'hello', errorCB = null) {
 
 
+
     $.ajax({
       url: Parse.server,
       type: 'GET',
