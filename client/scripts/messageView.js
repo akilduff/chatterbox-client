@@ -1,12 +1,10 @@
 var MessageView = {
 
   render: _.template(`
-      <!--
-      <div class="chat">
+       <div class="chat">
         <div class="username"></div>
-        <div></div>
+        <div><%= text%></div>
       </div>
-      -->
     `)
 
 };
@@ -19,3 +17,8 @@ var MessageView = {
 // => "hello: moe"
 
 // for us, text = chat in the example
+
+// MessageView.render({username: xxxx, chat: xxxx, room: xxx})
+
+// https://www.geeksforgeeks.org/how-to-use-underscore-js-as-a-template-engine/
+// https://underscorejs.org/#template

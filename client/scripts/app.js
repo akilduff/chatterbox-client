@@ -25,10 +25,12 @@ var App = {
       // examine the response from the server request:
 
       console.log("data", data);
+      var escaping = function() {
 
-      Rooms.parse(data);
-      var allMessages = Messages.parse(data);
-      var singleMessage = allMessages[0];
+      };
+      // escaping strings before we render it
+      MessagesView.render(data.results);
+      // the above invocation will spit out the templated chats one at a time
 
       callback();
     });
