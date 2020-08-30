@@ -30,6 +30,9 @@ var App = {
       };
       // escaping strings before we render it
       MessagesView.render(data.results);
+      console.log(Rooms.parse(data));
+      RoomsView.render(Rooms.parse(data));
+
       // the above invocation will spit out the templated chats one at a time
 
       callback();

@@ -9,10 +9,11 @@ var Rooms = {
         listOfRooms.push(data.results[i].roomname);
       }
     }
-    console.log(listOfRooms);
+    return listOfRooms;
 
   }
 
 };
+// assign conte
 
 // list of rooms
